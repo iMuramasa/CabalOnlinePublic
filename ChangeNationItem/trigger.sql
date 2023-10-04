@@ -9,7 +9,7 @@ BEGIN
     FROM inserted;
 
     SELECT @nation = nation, @characteridx = characteridx
-    FROM NewLife.dbo.NationChange
+    FROM Database.dbo.NationChange
     WHERE characteridx IN (SELECT CharacterIdx FROM inserted);
 
     IF (@Login = 1 AND @nation IS NOT NULL AND @characteridx IS NOT NULL)
