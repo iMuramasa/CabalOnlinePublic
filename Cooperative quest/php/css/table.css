@@ -1,0 +1,55 @@
+/*table.php css*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(32,36,66);
+    border: #0c0202;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.main{
+    background-color: rgb(32,36,66);
+    border-radius: 30px;
+    margin: 50px auto;
+    width: 85%;
+    height: 70%;
+
+}
+th, td {
+    text-align: left;
+    border: 1px solid #0c0202;
+    padding: 15px;
+    color: #fff;
+}
+
+th {
+    font-weight: bold;
+    background: rgb(5, 18, 58);
+    text-align: left;
+
+}
+
+tr:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+body{
+    background-color: rgb(45,50,90);
+    color: #ffb300;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+
+}
+.back{
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: slateblue;
+    padding: 10px;
+    top: 20px;
+    position: relative;
+    font-size: 25px;
+    margin: 0 0 0 50px;
+}
