@@ -1,4 +1,4 @@
-USE [NewLife]
+USE [Database]
 GO
 
 /****** Object:  Table [dbo].[Visits]    Script Date: 06.07.2023 20:56:44 ******/
