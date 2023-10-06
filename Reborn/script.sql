@@ -1,4 +1,4 @@
-USE [NewLife]
+USE [Database]
 GO
 
 /****** Object:  StoredProcedure [dbo].[cabal_Reborn]    Script Date: 29.07.2023 17:28:36 ******/
