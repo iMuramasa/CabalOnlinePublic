@@ -1,4 +1,4 @@
-USE [NewLife]
+USE [Database]
 GO
 
 /****** Object:  Table [dbo].[Reborn]    Script Date: 14.07.2023 22:32:20 ******/
