@@ -11,7 +11,7 @@ BEGIN
     FROM inserted;
 
     SELECT @point = point, @CharacterIdx = characteridx
-    FROM NewLife.dbo.Reborn
+    FROM Database.dbo.Reborn
     WHERE CharacterIdx IN (SELECT CharacterIdx FROM inserted);
 
     SELECT @PNT = PNT, @CharacterIdx = characteridx
@@ -25,7 +25,7 @@ BEGIN
         FROM dbo.cabal_character_table cct
         INNER JOIN inserted i ON cct.CharacterIdx = i.CharacterIdx;
 
-        DELETE FROM NewLife.dbo.Reborn
+        DELETE FROM Database.dbo.Reborn
         WHERE CharacterIdx IN (SELECT CharacterIdx FROM inserted);
     END
 END;
