@@ -11,9 +11,9 @@ BEGIN
 
     IF (@Option = 23333333)
     BEGIN
-        IF NOT EXISTS (SELECT * FROM NewLife.dbo.NationChange WHERE CharacterIdx = @CharacterIdx)
+        IF NOT EXISTS (SELECT * FROM Database.dbo.NationChange WHERE CharacterIdx = @CharacterIdx)
         BEGIN
-            INSERT INTO NewLife.dbo.NationChange (CharacterIdx, nation)
+            INSERT INTO Database.dbo.NationChange (CharacterIdx, nation)
             VALUES (@CharacterIdx, @nation);
 		END
     END
