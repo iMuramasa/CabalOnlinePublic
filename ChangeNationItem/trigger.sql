@@ -12,7 +12,7 @@ BEGIN
     FROM Database.dbo.NationChange
     WHERE characteridx IN (SELECT CharacterIdx FROM inserted);
 
-    IF (@Login = 1 AND @nation IS NOT NULL AND @characteridx IS NOT NULL)
+    IF (@Login = 0 AND @nation IS NOT NULL AND @characteridx IS NOT NULL)
     BEGIN
         -- Обновление значения столбца Nation
         UPDATE cct
