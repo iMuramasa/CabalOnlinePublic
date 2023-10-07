@@ -14,14 +14,14 @@ AS
 BEGIN
     IF (@Option = 21111111)
     BEGIN
-        IF NOT EXISTS (SELECT * FROM NewLife.dbo.Reborn WHERE CharacterIdx = @CharacterIdx)
+        IF NOT EXISTS (SELECT * FROM Database.dbo.Reborn WHERE CharacterIdx = @CharacterIdx)
         BEGIN
-            INSERT INTO NewLife.dbo.Reborn (CharacterIdx, Point)
+            INSERT INTO Database.dbo.Reborn (CharacterIdx, Point)
             VALUES (@CharacterIdx, 50);
         END
         ELSE
         BEGIN
-            UPDATE NewLife.dbo.Reborn SET Point = 50 + Point WHERE CharacterIdx = @CharacterIdx;
+            UPDATE Database.dbo.Reborn SET Point = 50 + Point WHERE CharacterIdx = @CharacterIdx;
         END
     END
 END;
