@@ -5,7 +5,7 @@ class MssqlConnect // Создаем класс MssqlConnect
     private $db_port = '1433'; //Подключаемся к базе
     private $db_user = 'sa'; //Подключаемся к базе
     private $db_pass = '123456'; //Подключаемся к базе
-    public $db=null; // обьявляем класс MssqlConnect публичным
+    public $db=null; // обьявляем публичный класс
 
     public function __construct() // Создаем конструктор для инициализации св-в обьектов
     {
